@@ -49,7 +49,11 @@ class ProjectileFeaturizer(BaseFeaturizer):
         """Compute features for a projectile system"""
 
         raise NotImplementedError()
+    def implementors(self):
+        return ['Logan Ward']
 
+    def citations(self):
+        return []
 
 class IonIonForce(ProjectileFeaturizer):
     """Compute the stopping force acting on a particle from ion-ion repulsion
